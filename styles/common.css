@@ -12,11 +12,26 @@
     --dark: #111414;
 }
 
+.dark-theme {
+    --bg: var(--dark);
+    --text: var(--light);
+}
+
+.light-theme {
+    --bg: var(--light);
+    --text: var(--dark);
+}
+
 body,
 html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
 }

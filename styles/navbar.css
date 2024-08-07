@@ -1,7 +1,3 @@
-a {
-    text-decoration: none;
-    color: var(--dark);
-}
 
 .navbar {
     display: flex;
@@ -44,13 +40,13 @@ a {
     bottom: 0;
     height: 1px;
     width: 0;
-    background: var(--dark);
+    background: var(--text);
     transition: width .5s ease;
 }
 
 .sliding-u-l-r-l:hover:before {
     width: 100%;
-    background: var(--dark);
+    background: var(--text);
     transition: width .5s ease;
 }
 
@@ -68,7 +64,7 @@ a {
     align-items: center;
     font-size: 1rem;
     gap: 3px;
-    color: var(--dark);
+    color: var(--text);
 }
 
 i {

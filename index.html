@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
 </head>
+
 <body>
     <div class="wrapper">
         <nav class="navbar">
@@ -22,8 +24,10 @@
                 <a href="#milestone" class="sliding-u-l-r-l">Milestone</a>
             </div>
             <div class="theme">
-                <button class="light-btn"><i class="bi bi-sun"></i>Light</button>
-                <!-- <button class="dark-btn"><i class="bi bi-moon"></i>Dark</button> -->
+                <button class="btn mode">
+                    <i class="bi bi-sun"></i>
+                    <span class="btn-text">Dark</span>
+                </button>
             </div>
         </nav>
         <main class="main">
@@ -41,5 +45,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/theme.js"></script>
 </body>
+
 </html>
