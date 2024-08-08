@@ -95,3 +95,75 @@
     font-size: 0.9rem;
     font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+
+    .about {
+        min-height: 50vh;
+    }
+
+    .about .about-text {
+        width: 100%;
+    }
+
+    .about .about-text p {
+        font-size: 1.2rem;
+    }
+
+    .connect {
+        display: none;
+    }
+
+    .resume {
+        margin: 1rem 0;
+    }
+
+    .resume:hover {
+        .resume-icon-bg {
+            transform: scale(30);
+        }
+    }
+
+    .resume-icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    .resume-icon i {
+        width: 1.25em;
+        height: 1.25em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .about {
+        padding: 1rem;
+    }
+
+    .about .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .resume {
+        padding: .25em .25em .25em 1em;
+    }
+
+    .resume-icon {
+        width: 1.75em;
+        height: 1.75em;
+    }
+
+    .resume-icon i {
+        width: 1em;
+        height: 1em;
+        transform: translate(5%, 0%);
+    }
+
+    .resume:hover {
+        .resume-icon-bg {
+            transform: scale(25);
+        }
+    }
+
+}

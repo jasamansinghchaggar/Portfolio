@@ -99,6 +99,10 @@ i {
         gap: unset;
     }
 
+    .navbar .links p {
+        width: fit-content;
+    }
+
     .theme {
         position: absolute;
         top: 0;
@@ -112,6 +116,10 @@ i {
 
     i {
         font-size: 1.1rem;
+    }
+
+    .sliding-u-l-r-l {
+        padding-bottom: 0;
     }
 }
 

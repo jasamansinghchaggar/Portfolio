@@ -53,3 +53,10 @@ a {
     pointer-events: none;
     transition: all 0.1s ease;
 }
+
+@media screen and (max-width: 768px) {
+    #cursor {
+        display: none;
+    }
+    
+}
