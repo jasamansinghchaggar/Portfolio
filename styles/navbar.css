@@ -11,9 +11,17 @@
     font-weight: 350;
 }
 
+.navbar a {
+    color: var(--text);
+}
+
 .navbar .links {
     display: flex;
     gap: 3rem;
+}
+
+.navbar .links p {
+    cursor: pointer;
 }
 
 .sliding-u-l-r-l {

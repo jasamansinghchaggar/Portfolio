@@ -1,4 +1,70 @@
 .about {
-    height: 100vh;
+    min-height: 80vh;
     width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
 }
+
+.about .about-text {
+    width: 60%;
+}
+
+.about .about-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* RESUME BUTTON START */
+.resume {
+    margin: 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    padding: .25em .25em .25em 1.25em;
+    background-color: var(--text);
+    color: var(--bg);
+    column-gap: 0.5em;
+    border-radius: 100px;
+}
+
+.resume-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.resume-icon-bg {
+    background-color: var(--bg);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    transform: scale(10);
+    transition: all .3s ease;
+}
+
+.resume-icon i {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    transform: translate(15%, 10%);
+    color: var(--text);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.resume:hover {
+    .resume-icon i {
+        opacity: 1;
+    }
+
+    .resume-icon-bg {
+        transform: scale(40);
+    }
+}
+
+/* RESUME BUTTON END */

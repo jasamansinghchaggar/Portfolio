@@ -1,6 +1,12 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('.wrapper'),
-    smooth: true
+    smooth: true,
+});
+
+var aboutScroll = document.querySelector('#about-scroll');
+var aboutSection = document.querySelector('#about');
+aboutScroll.addEventListener('click', function () {
+    scroll.scrollTo(aboutSection);
 });
 
 // Cursor
@@ -9,7 +15,7 @@ var cursor = document.querySelector('#cursor');
 var hoverTextElements = document.querySelectorAll('.hover-text');
 var removeCursor = document.querySelectorAll('.remove-cursor');
 
-body.addEventListener('mousemove', function(dets){
+body.addEventListener('mousemove', function (dets) {
     gsap.to(cursor, {
         x: dets.clientX,
         y: dets.clientY,
@@ -18,15 +24,15 @@ body.addEventListener('mousemove', function(dets){
     });
 });
 
-hoverTextElements.forEach(function(elem) {
-    elem.addEventListener('mouseenter', function() {
+hoverTextElements.forEach(function (elem) {
+    elem.addEventListener('mouseenter', function () {
         gsap.to(cursor, {
-            scale: 3, 
+            scale: 3,
             duration: 0.2
         });
     });
 
-    elem.addEventListener('mouseleave', function() {
+    elem.addEventListener('mouseleave', function () {
         gsap.to(cursor, {
             scale: 1,
             duration: 0.2
@@ -34,15 +40,15 @@ hoverTextElements.forEach(function(elem) {
     });
 });
 
-removeCursor.forEach(function(elem) {
-    elem.addEventListener('mouseenter', function() {
+removeCursor.forEach(function (elem) {
+    elem.addEventListener('mouseenter', function () {
         gsap.to(cursor, {
             opacity: 0,
             duration: 0.2
         });
     });
 
-    elem.addEventListener('mouseleave', function() {
+    elem.addEventListener('mouseleave', function () {
         gsap.to(cursor, {
             opacity: 1,
             duration: 0.2
