@@ -10,16 +10,24 @@
 :root {
     --light: #efefef;
     --dark: #111414;
+    --light2: #c9c9c9;
+    --dark2: #283131;
+    --cursor-shadow-light: #a9aaaa;
+    --cursor-shadow-dark: #515252;
 }
 
 .dark-theme {
     --bg: var(--dark);
     --text: var(--light);
+    --cursor: var(--dark2);
+    --cursor-hover: var(--light2);
 }
 
 .light-theme {
     --bg: var(--light);
     --text: var(--dark);
+    --cursor: var(--light2);
+    --cursor-hover: var(--dark2);
 }
 
 body,
@@ -34,4 +42,16 @@ html {
 a {
     text-decoration: none;
     color: var(--text);
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: var(--cursor);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.1s ease;
 }
