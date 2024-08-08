@@ -1,9 +1,10 @@
 .about {
     min-height: 80vh;
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .about .about-text {
@@ -68,3 +69,29 @@
 }
 
 /* RESUME BUTTON END */
+
+.connect {
+    width: 20%;
+}
+
+.connect p {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--middle);
+    border-bottom: 1px solid var(--middle-light);
+}
+
+.connecting-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.connecting-links a {
+    width: fit-content;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 300;
+}

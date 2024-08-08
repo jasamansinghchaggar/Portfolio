@@ -38,7 +38,7 @@
     bottom: 0;
     height: 1px;
     width: 0;
-    transition: width 0s ease, background .5s ease;
+    transition: width 0s ease, background .2s ease;
 }
 
 .sliding-u-l-r-l:after {
@@ -50,13 +50,13 @@
     height: 1px;
     width: 0;
     background: var(--text);
-    transition: width .5s ease;
+    transition: width .2s ease;
 }
 
 .sliding-u-l-r-l:hover:before {
     width: 100%;
     background: var(--text);
-    transition: width .5s ease;
+    transition: width .2s ease;
 }
 
 .sliding-u-l-r-l:hover:after {

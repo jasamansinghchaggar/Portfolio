@@ -12,22 +12,20 @@
     --dark: #111414;
     --light2: #c9c9c9;
     --dark2: #283131;
-    --cursor-shadow-light: #a9aaaa;
-    --cursor-shadow-dark: #515252;
+    --middle: #808080;
+    --middle-light: #80808049; 
 }
 
 .dark-theme {
     --bg: var(--dark);
     --text: var(--light);
     --cursor: var(--dark2);
-    --cursor-hover: var(--light2);
 }
 
 .light-theme {
     --bg: var(--light);
     --text: var(--dark);
     --cursor: var(--light2);
-    --cursor-hover: var(--dark2);
 }
 
 body,
@@ -37,6 +35,7 @@ html {
     overflow-x: hidden;
     background-color: var(--bg);
     color: var(--text);
+    position: relative;
 }
 
 a {
