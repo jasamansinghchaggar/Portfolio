@@ -1,5 +1,6 @@
-
 .navbar {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +57,10 @@
     transition: all 0s ease;
 }
 
+.theme {
+    height: 100%;
+}
+
 .theme button {
     background: none;
     border: none;
@@ -69,4 +74,42 @@
 
 i {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        position: relative;
+    }
+
+    .navbar #logo {
+        display: none;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+        gap: unset;
+    }
+
+    .theme {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+    }
+
+    .theme button {
+        font-size: 1rem;
+    }
+
+    i {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
 }

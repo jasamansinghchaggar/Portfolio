@@ -2,7 +2,7 @@
     height: 91vh;
     width: 100%;
     display: flex;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .main h1 {
@@ -19,9 +19,41 @@
     display: flex;
 }
 
-.specialize p {
+.specialize h1 {
     padding: 0 2rem;
     padding-bottom: 3rem;
     font-size: 1.2rem;
+    font-weight: 300;
     align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        padding-top: 5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main h1 {
+        padding-left: 2rem;
+        font-size: 6rem;
+    }
+
+    .specialize h1 {
+        padding-left: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        padding-left: 1rem;
+        font-size: 4.5rem;
+    }
+
+    .specialize h1 {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
 }
