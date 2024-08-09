@@ -44,7 +44,7 @@ tl.from('.main h1', {
 
 // ABOUT1 PAGE ANIMATIONS
 
-gsap.from(".about1 .about-text p", {
+tl.from(".about1 .about-text p", {
     opacity: 0,
     y: 100,
     duration: 1.5,
@@ -58,7 +58,7 @@ gsap.from(".about1 .about-text p", {
     },
 });
 
-gsap.from(".about1 .about-text .resume", {
+tl.from(".about1 .about-text .resume", {
     scrollTrigger: {
         trigger: ".about1 .about-text p",
         scroller: ".wrapper",
@@ -72,7 +72,7 @@ gsap.from(".about1 .about-text .resume", {
     ease: 'power1.inOut'
 });
 
-gsap.from(".about1 .connect", {
+tl.from(".about1 .connect", {
     scrollTrigger: {
         trigger: ".about1 .connect",
         scroller: ".wrapper",
@@ -86,7 +86,7 @@ gsap.from(".about1 .connect", {
     ease: 'power1.inOut'
 });
 
-gsap.from(".about1 .connect .connecting-links a", {
+tl.from(".about1 .connect .connecting-links a", {
     opacity: 0,
     y: 100,
     duration: 1,
