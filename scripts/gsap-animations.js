@@ -52,8 +52,8 @@ tl.from(".about1 .about-text p", {
     scrollTrigger: {
         trigger: ".about1 .about-text p",
         scroller: ".wrapper",
-        start: "top 90%",
-        end: "top 80%",
+        start: "top 80%",
+        end: "top 70%",
         scrub: 1,
     },
 });

@@ -48,7 +48,6 @@ a {
     background-color: var(--cursor);
     border-radius: 50%;
     position: fixed;
-    z-index: 9;
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all 0.1s ease;

@@ -220,3 +220,72 @@
 .about2 .helps .help-box .text .head {
     font-size: 1.5rem;
 }
+
+@media (max-width: 1200px) {
+    .about2 .helps {
+        gap: 4rem;
+    }
+
+    .about2 .helps .help-box {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about2 .can-help p {
+        font-size: 3rem;
+    }
+
+    .about2 .helps {
+        gap: 2rem;
+    }
+
+    .about2 .helps .help-box {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .about2 .can-help {
+        margin-bottom: 5rem;
+    }
+
+    .about2 .can-help p {
+        font-size: 2.5rem;
+    }
+
+    .about2 .helps {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .about2 .helps .help-box {
+        width: 100%;
+        gap: 2.5rem;
+        padding-left: 0;
+        border-left: none;
+        border-bottom: 1px solid var(--middle-light);
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about2 {
+        padding: 1rem;
+    }
+
+    .about2 .can-help p {
+        font-size: 3rem;
+    }
+
+    .about2 .helps .help-box .num {
+        font-size: 2.5rem;
+    }
+
+    .about2 .helps .help-box .text .head {
+        font-size: 1.2rem;
+    }
+}
