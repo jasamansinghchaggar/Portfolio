@@ -1,21 +1,15 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.wrapper'),
-    smooth: true,
-    smoothMobile: true,
-});
-
 
 // scroll to links
 var aboutScroll = document.querySelector('#about-scroll');
 var aboutSection = document.querySelector('#about');
 aboutScroll.addEventListener('click', function () {
-    scroll.scrollTo(aboutSection);
+    locoScroll.scrollTo(aboutSection);
 });
 
 var workScroll = document.querySelector('#work-scroll');
 var workSection = document.querySelector('#work');
 workScroll.addEventListener('click', function () {
-    scroll.scrollTo(workSection);
+    locoScroll.scrollTo(workSection);
 });
 
 // Cursor

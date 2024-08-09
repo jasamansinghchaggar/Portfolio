@@ -1,5 +1,6 @@
-.about {
-    min-height: 80vh;
+/* ABOUT1 */
+.about1 {
+    min-height: 70vh;
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -7,11 +8,12 @@
     position: relative;
 }
 
-.about .about-text {
+.about1 .about-text {
     width: 60%;
+    z-index: 10;
 }
 
-.about .about-text p {
+.about1 .about-text p {
     font-size: 2rem;
     line-height: 1.5;
 }
@@ -98,15 +100,15 @@
 
 @media screen and (max-width: 768px) {
 
-    .about {
+    .about1 {
         min-height: 50vh;
     }
 
-    .about .about-text {
+    .about1 .about-text {
         width: 100%;
     }
 
-    .about .about-text p {
+    .about1 .about-text p {
         font-size: 1.2rem;
     }
 
@@ -137,11 +139,11 @@
 
 @media screen and (max-width: 500px) {
 
-    .about {
+    .about1 {
         padding: 1rem;
     }
 
-    .about .about-text p {
+    .about1 .about-text p {
         font-size: 1.1rem;
     }
 
@@ -166,4 +168,55 @@
         }
     }
 
+}
+
+
+/* ABOUT2 */
+.about2 {
+    min-height: 60vh;
+    width: 100%;
+    padding: 2rem;
+    position: relative; 
+    z-index: 10;
+}
+
+.about2 .can-help {
+    height: 10vh;
+    margin-bottom: 2rem;
+}
+
+.about2 .can-help p {
+    font-size: 3.5rem;
+}
+
+.about2 .helps {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    gap: 8rem;
+}
+
+.about2 .helps .help-box {
+    height: 100%;
+    width: 20rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-left: 1px solid var(--middle-light);
+}
+
+.about2 .helps .help-box .num {
+    font-size: 3.5rem;
+    color: var(--middle-light);
+}
+
+.about2 .helps .help-box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.about2 .helps .help-box .text .head {
+    font-size: 1.5rem;
 }

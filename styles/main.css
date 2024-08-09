@@ -11,6 +11,7 @@
     font-size: 13rem;
     font-weight: 400;
     align-self: flex-end;
+    z-index: 10;
 }
 
 .specialize {
