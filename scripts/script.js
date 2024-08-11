@@ -1,4 +1,3 @@
-
 // scroll to links
 var aboutScroll = document.querySelector('#about-scroll');
 var aboutSection = document.querySelector('#about');
@@ -11,6 +10,13 @@ var workSection = document.querySelector('#work');
 workScroll.addEventListener('click', function () {
     locoScroll.scrollTo(workSection);
 });
+
+// Scroll to top
+var scrolltop = document.querySelector('#scroll-top');
+scrolltop.addEventListener('click', function () {
+    locoScroll.scrollTo(0);
+});
+
 
 // Cursor
 var body = document.querySelector('body');

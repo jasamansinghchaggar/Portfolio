@@ -21,6 +21,22 @@ ScrollTrigger.scrollerProxy(".wrapper", {
     pinType: document.querySelector(".wrapper").style.transform ? "transform" : "fixed"
 });
 
+const btt = document.querySelector("#scroll-top");
+gsap.set(btt, {y: 80});
+gsap.to(btt, {
+  y: 0, 
+  scale: 1,
+  duration: 0.5,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: "body",
+    scroller: ".wrapper",
+    start: "top -30%",
+    end: "top -30%",
+    toggleActions: "play none reverse none"
+  }
+});
+
 var tl = gsap.timeline();
 var mm = gsap.matchMedia();
 

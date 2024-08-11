@@ -13,7 +13,7 @@
     --light2: #c9c9c9;
     --dark2: #283131;
     --middle: #808080;
-    --middle-light: #80808049; 
+    --middle-light: #80808049;
 }
 
 .dark-theme {
@@ -53,9 +53,32 @@ a {
     transition: all 0.1s ease;
 }
 
+#scroll-top {
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    scale: 0;
+    background-color: var(--text);
+    color: var(--bg);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* box-shadow: 0px 0px 5px 0 rgba(133, 132, 132, 0.486);     */
+
+    i {
+        font-weight: 700;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #cursor {
         display: none;
     }
-    
+
 }
