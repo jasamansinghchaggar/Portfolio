@@ -57,7 +57,7 @@ a {
     height: 35px;
     width: 35px;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 20px;
     scale: 0;
     background-color: var(--text);
@@ -69,7 +69,6 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    /* box-shadow: 0px 0px 5px 0 rgba(133, 132, 132, 0.486);     */
 
     i {
         font-weight: 700;

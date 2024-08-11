@@ -1,4 +1,103 @@
 .collaborate {
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.collaborate .collaborate-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collaborate .collaborate-head .collaborate-text {
+    width: 60%;
+    padding: 1.5rem 0;
+}
+
+.collaborate .collaborate-head .collaborate-text h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.collaborate .collaborate-head .collaborate-text h1 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateY(17.5%);
+}
+
+.collaborate .collaborate-head .invite {
+    width: 20%;
+    display: flex;
+    align-self: flex-end;
+}
+
+.collaborate .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--middle-light);
+}
+
+.collaborate .footer .socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.collaborate .footer .socials a {
+    color: var(--text);
+}
+
+@media screen and (max-width: 768px) {
+
+    .collaborate .collaborate-head {
+        flex-direction: column;
+    }
+
+    .collaborate .collaborate-head .invite {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .collaborate .collaborate-head .collaborate-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .collaborate {
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+
+    .collaborate .collaborate-head .collaborate-text h1 {
+        font-size: 3rem;
+    }
+
+    .collaborate .collaborate-head .collaborate-text h1 img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .collaborate .footer {
+        margin-top: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .collaborate .footer .socials {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
 }
