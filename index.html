@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/expertise.css">
+    <link rel="stylesheet" href="styles/collaborate.css">
 </head>
 
 <body>
@@ -31,7 +33,8 @@
             <div class="links">
                 <p id="about-scroll" class="sliding-u-l-r-l animate-link">About</p>
                 <p id="work-scroll" class="sliding-u-l-r-l animate-link">Work</p>
-                <p id="milestones-scroll" class="sliding-u-l-r-l animate-link">Milestones</p>
+                <p id="expertise-scroll" class="sliding-u-l-r-l animate-link">Expertise</p>
+                <p id="collaborate-scroll" class="sliding-u-l-r-l animate-link">Collaborate</p>
             </div>
             <div class="theme">
                 <button class="btn mode animate-link">
@@ -110,7 +113,9 @@
                     <div id="elem1" class="work-elem" data-image="assets/nowork.webp">
                         <div class="overlay"></div>
                         <div class="elem-text">
-                            <h2>NoWork - Landing Page <br> <p>HTML, CSS, JS, Responsive</p></h2>
+                            <h2>NoWork - Landing Page <br>
+                                <p>HTML, CSS, JS, Responsive</p>
+                            </h2>
                             <h2>/24</h2>
                         </div>
                     </div>
@@ -119,7 +124,9 @@
                     <div id="elem2" class="work-elem" data-image="assets/expense-tracker.webp">
                         <div class="overlay"></div>
                         <div class="elem-text">
-                            <h2>Expense Tracker <br> <p>HTML, CSS, JS, Responsive</p></h2>
+                            <h2>Expense Tracker <br>
+                                <p>HTML, CSS, JS, Responsive</p>
+                            </h2>
                             <h2>/24</h2>
                         </div>
                     </div>
@@ -128,12 +135,51 @@
                     <div id="elem3" class="work-elem" data-image="assets/portfolio-project.webp">
                         <div class="overlay"></div>
                         <div class="elem-text">
-                            <h2>Portfolio Project <br> <p>HTML, CSS, JS, Responsive</p></h2>
+                            <h2>Portfolio Project <br>
+                                <p>HTML, CSS, JS, Responsive</p>
+                            </h2>
                             <h2>/24</h2>
                         </div>
                     </div>
                 </a>
             </div>
+        </section>
+        <section id="expertise" class="expertise">
+            <div class="expertise-left">
+                <h1 class="text-head">Skills I use to get work done</h1>
+                <p class="text-para">I focus on creating thoughtful and effective solutions to bring ideas to life. By
+                    combining creativity with problem-solving, I ensure that each project is both functional and
+                    visually engaging, delivering results that stand out.</p>
+            </div>
+            <div class="expertise-right">
+                <ul class="accordian">
+                    <li>
+                        <input type="radio" name="accordian" id="web-design">
+                        <label for="web-design">01. Web Design</label>
+                        <div class="accordian-text">
+                            <p>Designing websites that are visually appealing and user-friendly using <b>Figma</b>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordian" id="web-development">
+                        <label for="web-development">02. Web Development</label>
+                        <div class="accordian-text">
+                            <p>
+                                Creating fast, responsive, and interactive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, enhanced with animations powered by the <b>GSAP</b> library. On the backend, I utilize <b>Django</b> and <b>MySQL</b> to build robust and scalable web applications.                                
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordian" id="programming">
+                        <label for="programming">03. Programming</label>
+                        <div class="accordian-text">
+                            <p>Writing clean and efficient code using <b>Python</b> and <b>C</b>.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="collaborate" class="collaborate">
         </section>
     </div>
 
@@ -149,6 +195,7 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/theme.js"></script>
     <script src="scripts/work.js"></script>
+    <script src="scripts/expertise.js"></script>
 </body>
 
 </html>

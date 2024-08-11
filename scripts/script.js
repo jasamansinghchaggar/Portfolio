@@ -11,6 +11,19 @@ workScroll.addEventListener('click', function () {
     locoScroll.scrollTo(workSection);
 });
 
+var expertiseScroll = document.querySelector('#expertise-scroll');
+var expertiseSection = document.querySelector('#expertise');
+expertiseScroll.addEventListener('click', function () {
+    locoScroll.scrollTo(expertiseSection);
+});
+
+var collaborateScroll = document.querySelector('#collaborate-scroll');
+var collaborateSection = document.querySelector('#collaborate');
+collaborateScroll.addEventListener('click', function () {
+    locoScroll.scrollTo(collaborateSection);
+});
+
+
 // Scroll to top
 var scrolltop = document.querySelector('#scroll-top');
 scrolltop.addEventListener('click', function () {

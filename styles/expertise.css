@@ -1,0 +1,127 @@
+#expertise {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#expertise .expertise-left {
+    width: 50%;
+    padding: 2rem 0;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+#expertise .expertise-left .text-head{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#expertise .expertise-left .text-para{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#expertise .expertise-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-self: flex-start;
+}
+
+#expertise .expertise-right .accordian li {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid var(--middle-light);
+    margin-top: 2rem;
+    font-weight: 400;
+
+}
+
+#expertise .expertise-right .accordian li label {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+#expertise .expertise-right .accordian li label::before {
+    content: '+';
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+
+#expertise .expertise-right .accordian li input[type='radio'] {
+    display: none;
+}
+
+#expertise .expertise-right .accordian .accordian-text{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding-left: 3rem;
+}
+
+#expertise .expertise-right .accordian li input[type='radio']:checked + label + .accordian-text {
+    max-height: 100px;
+    padding-bottom: 1rem;
+}
+
+#expertise .expertise-right .accordian li input[type='radio']:checked + label::before {
+    content: '-';
+}
+
+@media screen and (max-width: 768px) {
+    #expertise {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #expertise .expertise-left {
+        width: 100%;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    #expertise .expertise-right {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    #expertise .expertise-right .accordian li label {
+        font-size: 1.5rem;
+    }
+
+    #expertise .expertise-right .accordian .accordian-text {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #expertise {
+        padding: 1rem;
+    }
+
+    #expertise .expertise-left .text-head {
+        font-size: 2rem;
+    }
+
+    #expertise .expertise-left .text-para {
+        font-size: 1rem;
+    }
+
+    #expertise .expertise-right .accordian li label {
+        font-size: 1rem;
+    }
+}
