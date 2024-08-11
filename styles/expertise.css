@@ -105,6 +105,11 @@
     #expertise .expertise-right .accordian .accordian-text {
         padding-left: 2rem;
     }
+
+    #expertise .expertise-right .accordian li input[type='radio']:checked + label + .accordian-text {
+        max-height: 170px;
+        padding-bottom: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
