@@ -1,5 +1,82 @@
 .work {
     min-height: 100vh;
     width: 100%;
+    margin-top: 5rem;
+    z-index: 9;
+    position: relative;
 }
 
+#fixed-image {
+    width: 50vw;
+    height:25vw;
+    /* background-color: blue; */
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: 20%;
+    display: none;
+    background-size: cover;
+    background-position: top left;
+}
+
+.work .work-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.work .work-head #left {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.work .work-head #right {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.work #work-list .work-elem {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--middle-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.work #work-list .work-elem .elem-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work #work-list .work-elem .elem-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.work #work-list .work-elem .elem-text h2 p {
+    font-size: 1rem;
+}
+
+.work #work-list .work-elem .overlay {
+    background-color: var(--middle-light);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all 0.15s ease;
+}
+
+.work #work-list .work-elem:hover .overlay {
+    top: 0;
+}
