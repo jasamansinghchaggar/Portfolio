@@ -8,7 +8,7 @@
 
 #fixed-image {
     width: 50vw;
-    height:25vw;
+    height: 25vw;
     /* background-color: blue; */
     border-radius: 10px;
     position: absolute;
@@ -79,4 +79,41 @@
 
 .work #work-list .work-elem:hover .overlay {
     top: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .work .work-head {
+        padding: 1rem;
+    }
+
+    .work .work-head #left {
+        font-size: 1.2rem;
+    }
+
+    .work .work-head #right {
+        display: none;
+    }
+
+    .work #work-list .work-elem {
+        padding: 1rem;
+    }
+
+    .work #work-list .work-elem .elem-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .work #work-list .work-elem .elem-text h2 p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .work #work-list .work-elem .elem-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .work #work-list .work-elem .elem-text h2 p {
+        font-size: 0.8rem;
+    }
 }
