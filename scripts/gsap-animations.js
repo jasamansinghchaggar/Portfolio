@@ -212,14 +212,14 @@ mm.add("(min-width: 1024px)", () => {
         opacity: 0,
         x: 100,
         duration: 2,
-        stagger: 5,
+        stagger: 2,
         ease: 'power2.inOut',
         scrollTrigger: {
             trigger: ".expertise .expertise-right .accordian li",
             scroller: ".wrapper",
             start: "top 80%",
             end: "top 70%",
-            scrub: 4,
+            scrub: 2,
         },
     });
 
@@ -450,8 +450,8 @@ mm.add("(max-width: 1023px)", () => {
             trigger: ".expertise .expertise-right .accordian li",
             scroller: ".wrapper",
             start: "top 80%",
-            end: "top 70%",
-            scrub: 1,
+            end: "top 60%",
+            scrub: 3,
         },
     });
 
