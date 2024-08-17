@@ -53,8 +53,10 @@
 .resume-icon i {
     width: 1.5em;
     height: 1.5em;
-    position: absolute;
-    transform: translate(15%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     color: var(--text);
     opacity: 0;
     transition: all .3s ease;
@@ -156,12 +158,6 @@
         height: 1.75em;
     }
 
-    .resume-icon i {
-        width: 1em;
-        height: 1em;
-        transform: translate(5%, -5%);
-    }
-
     .resume:hover {
         .resume-icon-bg {
             transform: scale(25);
@@ -176,7 +172,7 @@
     min-height: 60vh;
     width: 100%;
     padding: 2rem;
-    position: relative; 
+    position: relative;
     z-index: 10;
 }
 
@@ -246,7 +242,7 @@
 }
 
 @media (max-width: 768px) {
-    
+
     .about2 .can-help {
         margin-bottom: 5rem;
     }
