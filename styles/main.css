@@ -39,6 +39,7 @@
     .main h1 {
         padding-left: 2rem;
         font-size: 6rem;
+        align-self: flex-start;
     }
 
     .specialize h1 {
