@@ -7,8 +7,8 @@
 }
 
 #fixed-image {
-    width: 50vw;
-    height: 25vw;
+    width: 720px;
+    height: 324px;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
@@ -16,7 +16,6 @@
     top: 20%;
     display: none;
     background-size: cover;
-    background-position: top left;
 }
 
 .work .work-head {
