@@ -2,13 +2,17 @@
     height: 91vh;
     width: 100%;
     display: flex;
-    overflow: hidden;
 }
 
-.main h1 {
-    width: 80%;
+.main .main-head {
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+
+.main .main-head h1 {
     padding-left: 2rem;
-    font-size: 13rem;
+    font-size: 15vw;
     font-weight: 400;
     align-self: flex-end;
     z-index: 10;
@@ -16,12 +20,12 @@
 
 .specialize {
     height: 100%;
-    width: 100%;
+    width: 25%;
     display: flex;
 }
 
 .specialize h1 {
-    padding: 0 4rem;
+    padding-right: 4rem;
     padding-bottom: 3rem;
     font-size: 1.2rem;
     font-weight: 300;
@@ -36,7 +40,7 @@
         gap: 1rem;
     }
 
-    .main h1 {
+    .main .mian-head h1 {
         padding-left: 2rem;
         font-size: 6rem;
         align-self: flex-start;
@@ -49,7 +53,7 @@
 }
 
 @media (max-width: 480px) {
-    .main h1 {
+    .main .main-head h1 {
         padding-left: 1rem;
         font-size: 4.5rem;
     }
