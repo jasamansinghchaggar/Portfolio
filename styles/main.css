@@ -46,6 +46,10 @@
         align-self: flex-start;
     }
 
+    .specialize {
+        width: 100%;
+    }
+
     .specialize h1 {
         padding-left: 2rem;
         font-size: 1rem;
