@@ -10,8 +10,8 @@
 :root {
     --light: #efefef;
     --dark: #111414;
-    --light2: #c9c9c9;
-    --dark2: #283131;
+    --light2: #ffffff;
+    --dark2: #ffffff;
     --middle: #808080;
     --middle-light: #80808049;
 }
@@ -51,6 +51,8 @@ a {
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: all 0.1s ease;
+    z-index: 999999;
+    mix-blend-mode: difference;
 }
 
 #scroll-top {
