@@ -7,8 +7,8 @@
 }
 
 #fixed-image {
-    width: 720px;
-    height: 324px;
+    width: 50vw;
+    height: 50vh;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
