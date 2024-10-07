@@ -26,34 +26,28 @@ const mm = gsap.matchMedia();
 // Desktop Animations
 mm.add("(min-width: 1024px)", () => {
     const tl = gsap.timeline();
-    const tl2 = gsap.timeline();
 
     // PRELOADER ANIMATION
-    tl2.from('#preloader', {
-        opacity: 0,
-        delay: 0.5,
-    });
-
-    tl2.to('#preloader', {
+    gsap.to('#preloader', {
         delay: 1,
         duration: 2,
         y: -1000,
         ease: 'power1.out',
     });
 
-    // tl2.to('.slice', {
-    //     stagger: {
-    //         each: 0.5,
-    //         from: 'bottom',
-    //         to: 'top',
-    //     },
-    // });
+    gsap.to('.slice', {
+        height: 0,
+        stagger: {
+            amount: 1.5,
+        },
+        ease: 'power1.inOut',
+    });
 
     // MAIN PAGE ANIMATIONS
     tl.from('.animate-link', {
         opacity: 0,
         duration: 0.5,
-        delay: 2.8,
+        delay: 1.5,
         y: 20,
         stagger: 0.1,
         ease: 'power1.inOut'
@@ -264,19 +258,22 @@ mm.add("(min-width: 1024px)", () => {
 // Mobile Animations
 mm.add("(max-width: 1023px)", () => {
     const tl = gsap.timeline();
-    const tl2 = gsap.timeline();
 
     // PRELOADER ANIMATION
-    tl2.from('#preloader', {
-        opacity: 0,
-        delay: 0.5,
-    });
-
-    tl2.to('#preloader', {
+    gsap.to('#preloader', {
         delay: 1,
         duration: 2,
         y: -1000,
         ease: 'power1.out',
+    });
+
+    gsap.to('.slice', {
+        delay: 4,
+        height: 0,
+        stagger: {
+            amount: 1.5,
+        },
+        ease: 'power1.inOut',
     });
 
     // MAIN PAGE ANIMATIONS
