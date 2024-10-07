@@ -29,8 +29,8 @@ mm.add("(min-width: 1024px)", () => {
 
     // PRELOADER ANIMATION
     gsap.to('#preloader', {
-        delay: 1,
-        duration: 2,
+        delay: 2,
+        duration: 4,
         y: -1000,
         ease: 'power1.out',
     });
@@ -38,7 +38,7 @@ mm.add("(min-width: 1024px)", () => {
     gsap.to('.slice', {
         height: 0,
         stagger: {
-            amount: 1.5,
+            amount: 2,
         },
         ease: 'power1.inOut',
     });
@@ -47,7 +47,7 @@ mm.add("(min-width: 1024px)", () => {
     tl.from('.animate-link', {
         opacity: 0,
         duration: 0.5,
-        delay: 1.5,
+        delay: 2,
         y: 20,
         stagger: 0.1,
         ease: 'power1.inOut'
@@ -261,14 +261,13 @@ mm.add("(max-width: 1023px)", () => {
 
     // PRELOADER ANIMATION
     gsap.to('#preloader', {
-        delay: 1,
+        delay: 3,
         duration: 2,
         y: -1000,
-        ease: 'power1.out',
+        ease: 'bounce.out',
     });
 
     gsap.to('.slice', {
-        delay: 4,
         height: 0,
         stagger: {
             amount: 1.5,
@@ -280,11 +279,12 @@ mm.add("(max-width: 1023px)", () => {
     tl.from('.animate-link', {
         opacity: 0,
         duration: 0.5,
-        delay: 2.8,
+        delay: 2.5,
         y: 20,
         stagger: 0.1,
         ease: 'power1.inOut'
     });
+    
     tl.from('.main h1', {
         opacity: 0,
         duration: 0.5,

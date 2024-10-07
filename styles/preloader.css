@@ -23,10 +23,16 @@
     } */
 
     .slice {
-        width: 10vw;
+        width: 100%;
         height: 100%;   
         background-color: var(--text);
+        color: var(--bg);
         z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        font-family: "World of Water", sans-serif;
     }
 }
 
