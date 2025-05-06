@@ -302,8 +302,8 @@ mm.add("(max-width: 1023px)", () => {
         scrollTrigger: {
             trigger: ".about1 .about-text p",
             scroller: ".wrapper",
-            start: "top 80%",
-            end: "top 70%",
+            start: "top 65%",
+            end: "top 55%",
             scrub: 1,
         },
     });
@@ -311,8 +311,8 @@ mm.add("(max-width: 1023px)", () => {
         scrollTrigger: {
             trigger: ".about1 .about-text p",
             scroller: ".wrapper",
-            start: "top 70%",
-            end: "top 60%",
+            start: "top 65%",
+            end: "top 55%",
             scrub: 2,
         },
         opacity: 0,

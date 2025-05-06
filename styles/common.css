@@ -83,6 +83,10 @@ a {
     }
 }
 
+.wrapper {
+    height: max-content;
+}
+
 @media screen and (max-width: 768px) {
     #cursor {
         display: none;
