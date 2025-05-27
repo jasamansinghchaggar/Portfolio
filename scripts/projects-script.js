@@ -1,4 +1,3 @@
-
 // Initialize Locomotive Scroll
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector('.wrapper'),
@@ -113,3 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Keep LocomotiveScroll and ScrollTrigger in sync
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+ScrollTrigger.refresh();

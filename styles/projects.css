@@ -1,4 +1,11 @@
 /* for index page */
+.back-button {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    text-decoration: underline;
+}
 
 .see-all {
     display: flex;
@@ -206,6 +213,10 @@
 
     .socials {
         flex-wrap: wrap;
+    }
+
+    .back-button {
+        padding: 1rem;
     }
 }
 
