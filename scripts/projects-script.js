@@ -2,7 +2,7 @@
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector('.wrapper'),
     smooth: true,
-    smoothMobile: true,
+    smoothMobile: true, // Enable smooth scrolling on mobile
 });
 
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
