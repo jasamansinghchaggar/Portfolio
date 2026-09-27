@@ -25,22 +25,26 @@ const mm = gsap.matchMedia();
 
 // Desktop Animations
 mm.add("(min-width: 1024px)", () => {
-    const tl = gsap.timeline();
-
-    // PRELOADER ANIMATION
-    gsap.to('#preloader', {
-        delay: 2,
-        duration: 4,
-        y: -1000,
-        ease: 'power1.out',
+    const tl = gsap.timeline({
+        delay: 2
     });
 
+    // PRELOADER ANIMATION
+    
     gsap.to('.slice', {
         height: 0,
+        delay: 2,
         stagger: {
             amount: 2,
         },
         ease: 'power1.inOut',
+    });
+
+    gsap.to('#preloader', {
+        delay: 4,
+        duration: 4,
+        y: -1000,
+        ease: 'power1.out',
     });
 
     // MAIN PAGE ANIMATIONS
